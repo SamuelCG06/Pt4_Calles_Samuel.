@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBDEFB"
+    tools:context=".activityAlarma">
+
+    <TextView
+        android:id="@+id/txtTitol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear alarma"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp" />
+
+    <EditText
+        android:id="@+id/txtMissatge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Missatge de l'alarma"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTitol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txtHora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Hora"
+        android:inputType="number"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtMissatge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txtMinuts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Minuts"
+        android:inputType="number"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtHora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnCrearAlarma"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crear alarma"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFFFFF"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtMinuts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnEnrere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enrere"
+        android:backgroundTint="#90CAF9"
+        android:textColor="#0D47A1"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btnCrearAlarma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
